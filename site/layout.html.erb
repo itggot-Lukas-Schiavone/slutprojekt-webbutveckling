@@ -10,22 +10,25 @@
 <body>
     <div class="container">
         <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
             <div class="name">
-                <h1>Pizzeria Schiavone</h1>
+                <h1>Pizzeria</h1>
             </div>
             <nav>
                 <div class="hem">
-                    <h3>Hem</h3>
+                    <a href="index.html"><h3>Hem</h3></a>
                 </div>
                 <div class="meny">
-                    <h3>Meny</h3>
+                    <a href="meny.html"><h3>Meny</h3></a>
                 </div>
                 <div class="restauranger">
-                    <h3>Restauranger</h3>
+                    <a href="restauranger.html"><h3>Restauranger</h3></a>
                 </div>
             </nav>
         </header>
+        <%= yield%>
     </div>
-    <%= yield%>
 </body>
 </html>

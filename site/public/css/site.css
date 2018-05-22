@@ -268,7 +268,7 @@ div.calzone {
 
     div.margherita {
         grid-column: 1/7;
-        grid-row: 1/4;
+        grid-row: 2/5;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
@@ -276,9 +276,45 @@ div.calzone {
 
     div.vesuvio {
         grid-column: 7/13;
-        grid-row: 1/4;
+        grid-row: 2/5;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+    }
+
+    div.peperoni {
+        grid-column: 1/7;
+        grid-row: 5/8;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    div.quattroformaggi {
+        grid-column: 7/13;
+        grid-row: 5/8;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    div.capricciosa {
+        grid-column: 1/7;
+        grid-row: 8/11;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    div.calzone {
+        grid-column: 7/13;
+        grid-row: 8/11;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .pizzapicture {
+        display: none;
     }
 }

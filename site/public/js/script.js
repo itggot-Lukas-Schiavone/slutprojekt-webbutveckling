@@ -8,3 +8,8 @@ function showPizza(pizzaname) {
     var selectedpizza = document.querySelector(".pizzapicture." + pizzaname);
     selectedpizza.classList.remove("hidden");name
 }
+
+function hidePizza(pizzaname) {
+    var selectedpizza = document.querySelector(".pizzapicture." + pizzaname);
+    selectedpizza.classList.add("hidden")
+}

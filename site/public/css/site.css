@@ -219,7 +219,7 @@ div.calzone {
 }
 
 .restaurant {
-    grid-column: 7/12;
+    grid-column: 6/12;
     grid-row: 3/12;
     background-color: white;
     text-align: center;
@@ -315,6 +315,15 @@ div.calzone {
     }
 
     .pizzapicture {
+        display: none;
+    }
+
+    .locations {
+        grid-column: 1/12;
+        grid-row: 2/12;
+    }
+
+    .restaurant {
         display: none;
     }
 }

@@ -14,7 +14,8 @@ body{
 }
 
 header {
-    grid-row: 1/2;
+    grid-row: 1/1;
+    height: 160px;
     grid-column: 1/13;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,14 +41,33 @@ header h1 {
     font-family: 
 }
 
+.social {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
 nav {
     grid-row: 2/3;
     grid-column: 1/13;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin-top: 25px;
     border: 2px solid black;
+}
+
+nav a {
+    font-family: papyrus;
+    text-decoration: none;
+    font-size: 15px;
+    margin: auto;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    color: darkblue;
 }
 
 .hem {
@@ -103,7 +123,8 @@ nav {
 .info p {
     font-family: papyrus;
     margin: 2px;
-    font-size: 18px;
+    font-size: 17.55px;
+    
 }
 
 .chef {
@@ -117,16 +138,32 @@ nav {
     border: 2px solid black;
 }
 
+.contact {
+    grid-column: 11/13;
+    grid-row: 12/13;
+    background-color: #ffff9a;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border: 2px solid black;
+}
+
 .pizzapicture {
     z-index: 99;
-    grid-column: 4/10;
+    grid-column: 3/11;
     grid-row: 2/12;
+    height: 500px;
+    width: 900x;
     border-radius: 20px;
+    transition: 0.6s;
     box-shadow: 2px 2px 2px black;
+    margin: auto;
 }
 
 .pizzapicture.hidden {
-    display: none;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    transition: 0.5s;
 }
 
 div.margherita {
@@ -138,6 +175,7 @@ div.margherita {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 div.vesuvio {
@@ -149,6 +187,7 @@ div.vesuvio {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 div.peperoni {
@@ -160,6 +199,7 @@ div.peperoni {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 div.quattroformaggi {
@@ -171,6 +211,7 @@ div.quattroformaggi {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 div.capricciosa {
@@ -182,6 +223,7 @@ div.capricciosa {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 div.calzone {
@@ -193,6 +235,7 @@ div.calzone {
     background-color: #ffff9a;
     border-radius: 20px;
     opacity: 0.8;
+    font-family: papyrus;
 }
 
 .locations {
@@ -208,6 +251,7 @@ div.calzone {
     grid-template-rows: repeat(8,1fr);
     grid-column: repeat(1,1fr);
     border-radius: 20px;
+    font-family: papyrus;
 }
 
 .map {
@@ -231,6 +275,7 @@ div.calzone {
     grid-template-rows: repeat(8,1fr);
     grid-column: repeat(1,1fr);
     border-radius: 20px;
+    font-family: papyrus;
 }
 
 .moon {
@@ -241,7 +286,7 @@ div.calzone {
     border-bottom-right-radius: 20px;
 }
 
-@media only screen and (max-device-width:500px) {
+@media only screen and (max-device-width:600px) {
     .image {
         display: none;
     }
@@ -251,12 +296,17 @@ div.calzone {
         grid-row: 7/13;
         margin-bottom: 10px;
         margin-top: 5px;
+        margin-bottom: 65px;
+    }
+
+    .social {
+        display: none;
     }
 
     .info p {
         font-family: papyrus;
         margin: 2px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .chef {
@@ -266,12 +316,19 @@ div.calzone {
         margin-bottom: 5px;
     }
 
+    .contact {
+        grid-column: 8/13;
+        grid-row: 12/13;
+        font-size: 10px;
+    }
+
     div.margherita {
         grid-column: 1/7;
         grid-row: 2/5;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     div.vesuvio {
@@ -280,6 +337,7 @@ div.calzone {
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     div.peperoni {
@@ -288,6 +346,7 @@ div.calzone {
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     div.quattroformaggi {
@@ -296,6 +355,7 @@ div.calzone {
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     div.capricciosa {
@@ -304,6 +364,7 @@ div.calzone {
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     div.calzone {
@@ -312,6 +373,7 @@ div.calzone {
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 10px;
+        font-size: 13px;
     }
 
     .pizzapicture {
